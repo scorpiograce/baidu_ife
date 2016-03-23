@@ -1,0 +1,224 @@
+@charset "utf-8"; /*CSS前面都要写上这句*/
+/*CSS重置，解决一些浏览器显示不同的问题*/
+html{background-color:#fff;font-size:16px;line-height:150%;}
+:focus { outline: 0;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin: 0;padding: 0;}
+table{border-collapse:collapse;border-spacing: 0;}
+fieldset,img{border: 0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ul li{list-style:none;}
+caption, th, td { text-align: left; font-weight: normal;}
+h1,h2,h3,h4,h5,h6,p{font-size:100%;font-weight:normal;font-family:"微软雅黑";}
+blockquote:before, blockquote:after,q:before,q:after{content:'';}
+abbr,acronym {border: 0;font-variant:normal;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;overflow:hidden;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit; resize: none;outline:none;}
+legend{color:#000;}
+body {font-family:apple,"helvetica neue",arial,sans-serif;;color:#211922;}
+table{font-size:inherit;}
+pre,code,kbd,samp,tt{font-family:monospace;line-height:100%;}
+em{font-style:italic;}
+strong{font-weight:bold;}
+a{text-decoration:none;color:#0000CC;}
+blockquote, q {quotes: "" "";}
+p{font-size:12px;}
+
+body{
+	margin: 0px;
+	background-color: #dedede;
+}
+/*导航部分*/
+header{
+	margin: 0px;
+	padding: 0px;
+	height: 60px;
+	background-color: #333;
+	color: #fff;
+}
+header span{
+	display:inline-block;
+	height:100%;
+	vertical-align:middle;
+}
+header .baidu-logo{
+	width:120px;
+	height:40px;
+	vertical-align:middle;
+}
+header nav{
+	float: right;
+	margin-top: 15px;
+	margin-right: 20px;
+	font-size:12px;
+	/*margin-bottom: 10px;*/  /*没有margin-down，是叫margin-bottom = =，而且设置了margin-top，就必要设margin-bottom了*/
+}
+header nav ul li{
+	display:inline-block;
+	margin-left:20px;
+}
+header nav ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+header nav ul li a:hover{
+    color:#A9A9A9;
+}
+header nav ul li a.active{
+	color:#A9A9A9;
+}
+/*两篇文章*/
+article{
+	margin: 20px;
+	padding: 20px;
+	background-color: #fff;
+}
+h2{
+	font-size:22px;
+	line-height:200%;
+}
+h3{
+	font-size:16px;
+	color:#939393;
+	line-height:200%;
+}
+.author{
+	color: #939393;
+	font-size:12px;
+	line-height:200%;
+}
+article p.article_cont{
+	text-indent:30px;
+	font-size:14px;
+}
+article img{
+	width:300px;
+	height:242px;
+}
+article ul.list{
+	margin-left:30px;
+	font-size:14px;
+}
+
+/*图片部分*/
+article ul p{
+	font-size:12px;
+	color:grey;
+	line-height:240%;
+}
+.picture{
+	margin: 20px;
+	padding: 10px;
+	text-align: center;
+	border: solid 1px #E3E3E3;
+	width:100px;
+}
+article ul .picture img{
+	width:100px;
+	height:82px;
+}
+
+/*另一篇文章和表格部分*/
+article ol{
+	margin:10px auto 10px 45px;  /*margin上下左右值合并写法*/
+}
+article p.table-exp{
+	font-size:14px;
+}
+article table{
+	font-size:12px;
+	border:1px solid grey;
+}
+article table thead th{
+    font-weight:bold;
+	padding-left:10px;
+}
+.tableBottom{
+	background-color: #A7A7A7;
+}
+table td{
+	padding-left:10px;
+}
+table tbody td a{
+	text-decoration:underline;
+}
+.tableBottom td{
+	font-weight: bold;
+	border:0;
+}
+table{
+	width: 100%;
+	text-align: left;
+	border-collapse:collapse;
+	border: solid #999;
+	border-width: 1px;
+}
+table thead{
+	color: #fff;
+	background-color: #000;
+}
+
+/*侧栏部分*/
+aside{
+	margin: 20px;
+	padding: 20px;
+	background-color: #fff;
+}
+aside h3.aside_title{
+	font-size:16px;
+	line-height:200%;
+	color:black;
+	font-weight:bold;
+	border-left:3px solid #A9A9A9;
+	padding-left:10px;
+}
+aside form{
+	width: 100%;
+}
+.form_cont{
+	margin-left:300px;
+	font-size:12px;
+}
+aside form section{
+	line-height: 30px;
+}
+aside form section .hint{
+	font-size: 12px;  
+	color: #898989;
+	margin-left:100px;
+}
+aside form span{
+	margin-right:10px;
+}
+.form_short{
+	margin-left:60px;
+}
+aside form textarea{
+	width: 90%;
+	font-size:14px;
+	color:black;
+}
+/*
+.col-4{width: 33.33333333%;}
+.col-8{width: 66.66666667%;}
+*/
+.submit{
+	width: 100%;
+	background-color: #337ab7;
+	border-color: #2e6da4;
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+    -moz-border-radius:10px;
+}
+/*页面底部*/
+footer{
+	background: #000;
+	color: #fff;
+	min-height: 50px;
+	text-align: center;
+}
+footer p{
+	padding-top: 10px;
+}
