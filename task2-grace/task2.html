@@ -135,39 +135,43 @@
       <form action="" method="get">
 	  <div class="form_cont">
       	<section>
-      	    <span>请输入邮箱地址</span>
+		<p>
+      	    <span class="item_title">请输入邮箱地址</span>
       	    <input type="text" placeholder="这是一个文本输入框" />
-      	  <p class="hint" id="email_hint">邮箱地址请按要求格式输入</p> 
-      	</section>
-      	<section style="margin-left:25px;">
-      	    <span>请输入密码</span>
-      	    <input type="password" placeholder="这是一个文本输入框" />
+      	  </p>
+		  <p class="hint" id="email_hint"><span class="item_title"></span>邮箱地址请按要求格式输入</p> 
       	</section>
       	<section>
-      	    <span>请重复输入密码</span>
+		<p>
+      	    <span class="item_title">请输入密码</span>
       	    <input type="password" placeholder="这是一个文本输入框" />
-      	   <p class="hint" id="pw_hint">密码请为6-16位英文数字</p>
+			</p>
       	</section>
-      	<section class="form_short">
-      	  <span>性别</span>
+      	<section>
+      	    <span class="item_title">请重复输入密码</span>
+      	    <input type="password" placeholder="这是一个文本输入框" />
+      	   <p class="hint" id="pw_hint"><span class="item_title"></span>密码请为6-16位英文数字</p>
+      	</section>
+      	<section>
+      	  <span class="item_title">性别</span>
       	  <input type="radio" name="sex" value="male" checked="checked" />男 <!--一定要写上name和value属性-->
           <input type="radio" name="sex" value="female"/>女
       	</section>
-      	<section class="form_short">
-      	  <span>城市</span>
+      	<section>
+      	  <span class="item_title">城市</span>
       	  <select>
             <option>北京</option>
             <option>上海</option>
           </select>
       	</section>
-      	<section class="form_short">
-      	  <span>爱好 </span>
+      	<section>
+      	  <span class="item_title">爱好 </span>
       	  <input type="checkbox" name="field" value="sports" />运动
           <input type="checkbox" name="field" value="art"/>艺术
           <input type="checkbox" name="field" value="science"/>科学
       	</section>
-      	<section style="margin-left:35px;">
-      	  <span>个人描述 </span>
+      	<section>
+      	  <span class="item_title">个人描述 </span>
           <textarea placeholder="请输入个人描述" class="col-8"></textarea>
       	</section>
 		</div>
