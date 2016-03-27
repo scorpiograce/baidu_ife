@@ -1,0 +1,38 @@
+@charset "utf-8";
+body{
+	margin:0;
+	padding:0;
+	display:relative;
+	width:100%;
+	height:100%;
+}
+.container{
+	width:400px;
+	/*height:200px;*/
+	background:#ccc;
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	/*margin-top: -100px;*/
+	margin-left: -200px;
+	overflow:hidden;
+	height:auto;
+	min-height:100px;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    background: #fc0;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+	position:absolute;
+}
+.circle.circle1{
+	left:-50px;
+	top:-50px;
+}
+.circle.circle2{
+	right:-50px;
+	bottom:-50px;
+}
